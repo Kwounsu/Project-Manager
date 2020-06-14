@@ -61,7 +61,7 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         } else {
             Log.d("Retrofit", "User Login")
-            val intent = Intent(this, AdminHomeActivity::class.java)
+            val intent = Intent(this, UserHomeActivity::class.java)
             intent.putExtra("userId", userId)
             startActivity(intent)
         }

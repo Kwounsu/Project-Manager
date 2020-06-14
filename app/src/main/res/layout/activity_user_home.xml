@@ -17,10 +17,21 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent">
 
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/av_from_code"
+            android:layout_width="300dp"
+            android:layout_height="300dp" />
+
+        <TextView
+            android:text="View Task Assigned to me"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
         <Button
             android:layout_margin="10dp"
             android:id="@+id/button_taskByUser"
-            android:text="Tasks Assigned to me"
+            android:text="Check My Tasks"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
 

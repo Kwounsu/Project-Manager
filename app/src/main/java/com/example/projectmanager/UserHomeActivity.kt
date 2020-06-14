@@ -15,6 +15,10 @@ class UserHomeActivity : AppCompatActivity() {
         val userId = bundle?.get("userId")
         Log.d("Retrofit","Home: user ID = " + userId.toString())
 
+        av_from_code.setAnimation("task.json")
+        av_from_code.playAnimation()
+        av_from_code.loop(true)
+
         button_taskByUser.setOnClickListener {
             val intent = Intent (this, UserTaskActivity::class.java)
             intent.putExtra("userId",userId.toString())
