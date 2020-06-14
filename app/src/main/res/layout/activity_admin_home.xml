@@ -18,6 +18,11 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent">
 
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/av_from_code"
+            android:layout_width="300dp"
+            android:layout_height="150dp"/>
+
         <Button
             android:layout_margin="10dp"
             android:id="@+id/button_project"

@@ -4,7 +4,6 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
-import kotlinx.android.synthetic.main.activity_admin_employee.*
 import kotlinx.android.synthetic.main.activity_admin_home.*
 
 class AdminHomeActivity : AppCompatActivity() {
@@ -15,6 +14,10 @@ class AdminHomeActivity : AppCompatActivity() {
         val bundle: Bundle? = intent.extras
         val userId = bundle?.get("userId")
         Log.d("Retrofit","Admin Home: user ID = " + userId.toString())
+
+        av_from_code.setAnimation("puzzle.json")
+        av_from_code.playAnimation()
+        av_from_code.loop(true)
 
         button_project.setOnClickListener {
             val intent = Intent (this, AdminProjectActivity::class.java)
